@@ -17,7 +17,8 @@ input:focus{
     align-items: center;
     padding: 10px;
     justify-content: space-between;
-    border: 1px solid lightgray;
+    background-color:  #128C7E;
+    border: 1px solid  #0f796c;
 }
 
 .sidebar_headerRight{
@@ -30,6 +31,7 @@ input:focus{
 .sidebar_headerRight > .MuiSvgIcon-root{
     margin-right: 2vw;
     font-size: 24px !important;
+ 
 }
 
 .sidebar_search{

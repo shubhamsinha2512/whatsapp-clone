@@ -7,12 +7,16 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
 
 import SidebarChat from './SidebarChat/SidebarChat'
+import {Link} from 'react-router-dom'
 
 function Sidebar() {
     return (
         <div className="sidebar">
             <div className="sidebar_header">
-                <IconButton><Avatar /></IconButton>
+                
+                <Link to="/profile">
+                    <IconButton><Avatar /></IconButton>
+                </Link>
                 <div className="sidebar_headerRight">
                     <IconButton><DountLargeIcon /></IconButton>
                     <IconButton><ChatIcon /></IconButton>
