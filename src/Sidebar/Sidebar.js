@@ -19,7 +19,11 @@ function Sidebar() {
                 </Link>
                 <div className="sidebar_headerRight">
                     <IconButton><DountLargeIcon /></IconButton>
-                    <IconButton><ChatIcon /></IconButton>
+                    
+                    <Link to="/newchat">
+                        <IconButton><ChatIcon /></IconButton>
+                    </Link>
+                    
                     <IconButton><MoreVertIcon /></IconButton>
                 </div>
             </div> 
