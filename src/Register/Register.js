@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
+import axios from 'axios'
 
 import './Register.css'
 
@@ -8,6 +9,7 @@ function Register() {
     const handleName = (event)=>{};
     const handleMobile = (event)=>{};
     const handlePwd = (event)=>{};
+
     const handleLogin = (event) => {
         event.preventDefault();
     };

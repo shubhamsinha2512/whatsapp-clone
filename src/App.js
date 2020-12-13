@@ -10,7 +10,7 @@ import Register from './Register/Register';
 /* *********************** */
 
 import {Switch, Route} from 'react-router-dom';
-import SidebarnewChat from './Sidebar/SidebarNewChat/SidebarNewChat';
+import SidebarNewChat from './Sidebar/SidebarNewChat/SidebarNewChat';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Sidebar} />
           <Route path="/profile" component={SidebarProfile} />
-          <Route path="/newChat" component={SidebarnewChat} />
+          <Route path="/newChat" component={SidebarNewChat} />
         </Switch>
         <Chat />
       </div>
