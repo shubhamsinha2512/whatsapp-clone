@@ -1,28 +1,25 @@
 import './App.css';
 
-import Chat from './Chat/Chat'
+import {useState, useEffect} from 'react'
+import axios from 'axios'
 
 //Routed Components
 /*----------------------------- */
-import Sidebar from './Sidebar/Sidebar';
-import SidebarProfile from './Sidebar/SidebarProfile/SidebarProfile';
-import Register from './Register/Register';
-/* *********************** */
 
-import {Switch, Route} from 'react-router-dom';
-import SidebarNewChat from './Sidebar/SidebarNewChat/SidebarNewChat';
+import Auth from './Auth/Auth';
+/* *********************** */
+import Dashboard from './Dashboard/Dashboard'
 
 function App() {
+
+  const [authStatus, setAuthStatus] = useState({
+    loggedIn:false
+  })
+
   return (
     <div className="app">
       <div className="app_body">
-        {/* <Register className='register' /> */}
-        <Switch>
-          <Route path="/" exact component={Sidebar} />
-          <Route path="/profile" component={SidebarProfile} />
-          <Route path="/newChat" component={SidebarNewChat} />
-        </Switch>
-        <Chat />
+        {authStatus.loggedIn ? <Dashboard /> : <Auth className='auth' />}
       </div>
     </div>
   );

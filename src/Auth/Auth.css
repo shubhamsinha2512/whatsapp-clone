@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.auth{
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    /* flex:1; */
+    padding: 30px;
+    /* justify-items: center; */
+}
+
+.auth > h1 {
+    /* background-color: green; */
+    text-align: center;
+    height: fit-content;
+}
+
+.forms{
+    height: fit-content;
+    margin: 20px;
+}
+
+.forms > h2 {
+
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.forms > form > input {
+    height: 24px;
+    width: 20vw;
+    margin: 10px auto;
+    border: 2px solid #128c7e;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: #128c7e;
+    font-size: 18px;
+}
+
+.forms > form > input:focus {
+    box-shadow: 0 1px 5px #128c7e;
+}
+
+.forms > form > input::placeholder {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.forms > form > button {
+    padding: 10px;
+    border:none;
+    color: white;
+    border-radius: 10px;
+    background-color: #128c7e;
+    width: 100%;
+}
