@@ -84,22 +84,3 @@ function Auth() {
 }
 
 export default Auth
-
-
-
-{/* <div className="Auth_fromContainer">
-                <div className="Auth_form">
-                    <h2>Auth</h2>
-                    <form>
-                        <input name="" placeholder="Full Name" onChange={handleName}/><br/>
-                        <input name="" placeholder="Mobile Number" onChange={handleMobile}/><br/>
-                        <input name="" placeholder="Password" onChange={handlePwd}/><br/>
-                        <button type="submit" onClick={handleAuth}>Auth</button>
-                    </form>
-                </div>
-
-                <div className="Auth_form">
-                    
-                </div>
-            </div>
-             */}
